@@ -22,6 +22,7 @@ time, mark, audio, video {
     font-family: Arial, sans-serif;
     font-size: 10px;
     color: black;
+    box-sizing: border-box;
 }
 
 body {
@@ -58,34 +59,38 @@ form {
 }
 
 .right-panel{
-    height: 100%;
-    width: 60%;
+    height: 100vh;
+    width: 60vw;
     display: flex;
     flex-direction: column;
     background-color: rgb(245, 245, 245);
 }
 
 .right-header {
-    height: 30%;
+    /*height: 30vh;*/
+    min-height: 200px;
     margin-top: 100px;
     padding-left: 2.5vw;
+    padding-right:2.5vw;
 }
 
 .right-header > p {
-    width: 600px;
+    max-width: 600px;
+    min-width: 475px;
 
 }
 
 .right-body {
-    height: 30%;
+    height: 30vh;
     padding-left: 2.5vw;
     background-color: white;
     box-shadow: 0px 3px 3px rgba(0,0,0,15%);
+    min-height: 25rem;
 
 }
 
 .right-footer {
-    height: 40%;
+    height: 40vh;
     padding-left: 2.5vw;
 }
 
@@ -131,6 +136,7 @@ input:invalid~.error {
     background-image: url("images/pv-hotel.jpeg");
     background-repeat: none;
     background-size: cover;
+    min-width: 35rem;
 }
 
 .left-logo {
@@ -138,6 +144,7 @@ input:invalid~.error {
     position: absolute;
     background-color: rgba(0,0,0,40%);
     width: 40vw;
+    min-width: 35rem;
     height: 100px;
     top: 200px;
 
@@ -145,13 +152,15 @@ input:invalid~.error {
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 
 .left-footer {
     position: absolute;
-    width: 40%;
+    width: 40vw;
     bottom: 10px;
     text-align: center;
+    min-width: 35rem;
 }
 
 .left-footer >p, .left-footer >p >a   {
@@ -159,7 +168,7 @@ input:invalid~.error {
 }
 
 .logo-image {
-    height: 8rem;
+    height: 6rem;
     width: auto;
 }
 
@@ -175,7 +184,6 @@ h1 {
     font-family: 'Hurricane', 'Inspiration', Arial, sans-serif;
     padding-left: 1rem;
     padding-right: 1rem;
-    width: 22rem;
     white-space: nowrap; 
 }
 
